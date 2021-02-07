@@ -1,4 +1,11 @@
 $gold: #faa307;
+$dark: #212121;
+$like: #ff4444;
+$eye: #4476ff;
+$eraser: #ff2d2d;
+$folder: #ffb444;
+
+$color_btn_hover: #f0f0f0;
 
 body {
     font-family: Mikhak;
@@ -83,26 +90,42 @@ body {
                             padding: 10px;
                             line-height: 2rem;
                             &.mdi-heart {
-                                border: 1px solid #ff4444;
-                                color: #ff4444;
+                                border: 1px solid $like;
+                                color: $like;
+                                &:hover {
+                                    background-color: $like;
+                                    color: $color_btn_hover;
+                                }
                             }
                             &.mdi-eye {
-                                border: 1px solid #4476ff;
-                                color: #4476ff;
+                                border: 1px solid $eye;
+                                color: $eye;
+                                &:hover {
+                                    background-color: $eye;
+                                    color: $color_btn_hover;
+                                }
                             }
                             &.mdi-folder {
-                                border: 1px solid #ffb444;
-                                color: #ffb444;
+                                border: 1px solid $folder;
+                                color: $folder;
+                                &:hover {
+                                    background-color: $folder;
+                                    color: $color_btn_hover;
+                                }
                             }
                             &.mdi-eraser {
-                                border: 1px solid #ff2d2d;
-                                color: #ff2d2d;
+                                border: 1px solid $eraser;
+                                color: $eraser;
+                                &:hover {
+                                    background-color: $eraser;
+                                    color: $color_btn_hover;
+                                }
                             }
                         }
                     }
 
                     button {
-                        background-color: $gold;
+                        background-color: #ffb01f;
                         outline: none;
                         border: none;
                         padding: 5px 15px;
@@ -142,6 +165,7 @@ body {
 
                         a {
                             // background-color: #686868;
+                            text-decoration: none;
                             cursor: pointer;
                             color: $gold;
                             width: 100%;
