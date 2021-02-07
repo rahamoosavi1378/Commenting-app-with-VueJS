@@ -54,6 +54,9 @@ body {
                         font-size: 1.5rem;
                         color: #cecece;
                         margin-bottom: 10px;
+                        &:focus {
+                            box-shadow: 0 0 2px $gold;
+                        }
                     }
 
                     textarea {
@@ -70,6 +73,9 @@ body {
                         resize: none;
                         overflow: auto;
                         margin-bottom: 20px;
+                        &:focus {
+                            box-shadow: 0 0 2px $gold;
+                        }
                     }
 
                     .btn-group {
@@ -92,6 +98,9 @@ body {
                             &.mdi-heart {
                                 border: 1px solid $like;
                                 color: $like;
+                                &:focus {
+                                    box-shadow: 0 0 10px $like;
+                                }
                             }
                             &.mdi-heart-ac {
                                 background-color: $like;
@@ -100,6 +109,9 @@ body {
                             &.mdi-eye {
                                 border: 1px solid $eye;
                                 color: $eye;
+                                &:focus {
+                                    box-shadow: 0 0 10px $eye;
+                                }
                             }
                             &.mdi-eye-ac {
                                 background-color: $eye;
@@ -108,6 +120,9 @@ body {
                             &.mdi-folder {
                                 border: 1px solid $folder;
                                 color: $folder;
+                                &:focus {
+                                    box-shadow: 0 0 10px $folder;
+                                }
                             }
                             &.mdi-folder-ac {
                                 background-color: $folder;
@@ -116,6 +131,9 @@ body {
                             &.mdi-eraser {
                                 border: 1px solid $eraser;
                                 color: $eraser;
+                                &:focus {
+                                    box-shadow: 0 0 10px $eraser;
+                                }
                                 &:active {
                                     background-color: $eraser;
                                     color: $color_btn_hover;
@@ -124,7 +142,7 @@ body {
                         }
                     }
 
-                    button {
+                    .Send {
                         background-color: #ffb01f;
                         cursor: pointer;
                         outline: none;
@@ -133,11 +151,17 @@ body {
                         direction: rtl;
                         font-family: Mikhak;
                         font-size: 1.5rem;
-                        color: #fff;
+                        color: $dark;
                         border-radius: 5px;
                         width: 100%;
                         &:hover {
                             background-color: #ffa600;
+                        }
+                        &:focus {
+                            box-shadow: 0 0 10px $gold;
+                            background-color: $dark;
+                            border-radius: 5px;
+                            color: $color_btn_hover;
                         }
                     }
                 }
@@ -182,6 +206,11 @@ body {
 
                             &.home {
                                 font-size: 3rem;
+                            }
+                            &:focus {
+                                outline: none;
+                                color: $dark;
+                                text-shadow: 0 0 10px $gold;
                             }
                         }
                     }
