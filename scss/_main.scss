@@ -98,6 +98,10 @@ body {
                                     color: $color_btn_hover;
                                 }
                             }
+                            &.mdi-heart-ac {
+                                background-color: $like;
+                                color: $color_btn_hover;
+                            }
                             &.mdi-eye {
                                 border: 1px solid $eye;
                                 color: $eye;
@@ -107,6 +111,10 @@ body {
                                     color: $color_btn_hover;
                                 }
                             }
+                            &.mdi-eye-ac {
+                                background-color: $eye;
+                                color: $color_btn_hover;
+                            }
                             &.mdi-folder {
                                 border: 1px solid $folder;
                                 color: $folder;
@@ -115,6 +123,10 @@ body {
                                     background-color: $folder;
                                     color: $color_btn_hover;
                                 }
+                            }
+                            &.mdi-folder-ac {
+                                background-color: $folder;
+                                color: $color_btn_hover;
                             }
                             &.mdi-eraser {
                                 border: 1px solid $eraser;
@@ -130,6 +142,7 @@ body {
 
                     button {
                         background-color: #ffb01f;
+                        cursor: pointer;
                         outline: none;
                         border: none;
                         padding: 5px 15px;
@@ -139,6 +152,9 @@ body {
                         color: #fff;
                         border-radius: 5px;
                         width: 100%;
+                        &:hover {
+                            background-color: #ffa600;
+                        }
                     }
                 }
             }

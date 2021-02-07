@@ -23,13 +23,16 @@
 
 
                 <div id="write">
-                    <input type="text" placeholder="موضوع ..." autofocus>
-                    <textarea cols="30" rows="5" placeholder="دیدگاه ..."></textarea>
+                    <input type="text" placeholder="موضوع ..." autofocus v-model="title">
+                    <textarea cols="30" rows="5" placeholder="دیدگاه ..." v-model="comment"></textarea>
                     <div class="btn-group">
-                        <button class="btn mdi mdi-eraser"></button>
-                        <button class="btn mdi mdi-folder"></button>
-                        <button class="btn mdi mdi-eye mdi-eye-active"></button>
-                        <button class="btn mdi mdi-heart"></button>
+                        <button class="btn mdi mdi-eraser" v-on:click="eraserText()"></button>
+                        <button class="btn mdi mdi-folder" v-bind:class="{'mdi-folder-ac':archive}"
+                            v-on:click="archive=!archive"></button>
+                        <button class="btn mdi mdi-eye" v-bind:class="{'mdi-eye-ac':view}"
+                            v-on:click="view=!view"></button>
+                        <button class="btn mdi mdi-heart" v-bind:class="{'mdi-heart-ac':like}"
+                            v-on:click="like=!like"></button>
                     </div>
                     <button>ارسال</button>
                 </div>

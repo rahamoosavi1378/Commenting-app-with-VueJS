@@ -1,5 +1,16 @@
 new Vue({
     el: "#app",
-    data: {},
-    computed: {},
+    data: {
+        title: "",
+        comment: "",
+        like: false,
+        view: true,
+        archive: false,
+    },
+    methods: {
+        eraserText() {
+            this.title = "";
+            this.comment = "";
+        },
+    },
 });
