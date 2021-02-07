@@ -92,11 +92,6 @@ body {
                             &.mdi-heart {
                                 border: 1px solid $like;
                                 color: $like;
-                                &:hover,
-                                &:active {
-                                    background-color: $like;
-                                    color: $color_btn_hover;
-                                }
                             }
                             &.mdi-heart-ac {
                                 background-color: $like;
@@ -105,11 +100,6 @@ body {
                             &.mdi-eye {
                                 border: 1px solid $eye;
                                 color: $eye;
-                                &:hover,
-                                &:active {
-                                    background-color: $eye;
-                                    color: $color_btn_hover;
-                                }
                             }
                             &.mdi-eye-ac {
                                 background-color: $eye;
@@ -118,11 +108,6 @@ body {
                             &.mdi-folder {
                                 border: 1px solid $folder;
                                 color: $folder;
-                                &:hover,
-                                &:active {
-                                    background-color: $folder;
-                                    color: $color_btn_hover;
-                                }
                             }
                             &.mdi-folder-ac {
                                 background-color: $folder;
@@ -131,11 +116,6 @@ body {
                             &.mdi-eraser {
                                 border: 1px solid $eraser;
                                 color: $eraser;
-                                &:hover,
-                                &:active {
-                                    background-color: $eraser;
-                                    color: $color_btn_hover;
-                                }
                             }
                         }
                     }
