@@ -92,7 +92,8 @@ body {
                             &.mdi-heart {
                                 border: 1px solid $like;
                                 color: $like;
-                                &:hover {
+                                &:hover,
+                                &:active {
                                     background-color: $like;
                                     color: $color_btn_hover;
                                 }
@@ -100,7 +101,8 @@ body {
                             &.mdi-eye {
                                 border: 1px solid $eye;
                                 color: $eye;
-                                &:hover {
+                                &:hover,
+                                &:active {
                                     background-color: $eye;
                                     color: $color_btn_hover;
                                 }
@@ -108,7 +110,8 @@ body {
                             &.mdi-folder {
                                 border: 1px solid $folder;
                                 color: $folder;
-                                &:hover {
+                                &:hover,
+                                &:active {
                                     background-color: $folder;
                                     color: $color_btn_hover;
                                 }
@@ -116,7 +119,8 @@ body {
                             &.mdi-eraser {
                                 border: 1px solid $eraser;
                                 color: $eraser;
-                                &:hover {
+                                &:hover,
+                                &:active {
                                     background-color: $eraser;
                                     color: $color_btn_hover;
                                 }
