@@ -116,6 +116,10 @@ body {
                             &.mdi-eraser {
                                 border: 1px solid $eraser;
                                 color: $eraser;
+                                &:active {
+                                    background-color: $eraser;
+                                    color: $color_btn_hover;
+                                }
                             }
                         }
                     }
