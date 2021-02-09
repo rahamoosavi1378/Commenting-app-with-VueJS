@@ -8,7 +8,7 @@ $folder: #ffb444;
 $color_btn_hover: #f0f0f0;
 
 body {
-    font-family: Mikhak;
+    font-family: Mikhak, Vazir, Tahoma, sans-serif;
     background-color: #212121;
 
     #app {
@@ -19,7 +19,7 @@ body {
         height: 100vh;
 
         .container {
-            // background-color: #505050;
+            //background-color: #505050;
             color: #fff;
             width: 100%;
             height: 100%;
@@ -35,6 +35,8 @@ body {
                 padding-top: 15px;
                 display: flex;
                 flex-direction: column;
+                justify-content: center;
+                // align-items: center;
 
                 #write {
                     display: flex;
@@ -54,6 +56,7 @@ body {
                         font-size: 1.5rem;
                         color: #cecece;
                         margin-bottom: 10px;
+
                         &:focus {
                             box-shadow: 0 0 2px $gold;
                         }
@@ -73,6 +76,7 @@ body {
                         resize: none;
                         overflow: auto;
                         margin-bottom: 20px;
+
                         &:focus {
                             box-shadow: 0 0 2px $gold;
                         }
@@ -95,45 +99,57 @@ body {
                             font-size: 2rem;
                             padding: 10px;
                             line-height: 2rem;
+
                             &.mdi-heart {
                                 border: 1px solid $like;
                                 color: $like;
+
                                 &:focus {
                                     box-shadow: 0 0 10px $like;
                                 }
                             }
+
                             &.mdi-heart-ac {
                                 background-color: $like;
                                 color: $color_btn_hover;
                             }
+
                             &.mdi-eye {
                                 border: 1px solid $eye;
                                 color: $eye;
+
                                 &:focus {
                                     box-shadow: 0 0 10px $eye;
                                 }
                             }
+
                             &.mdi-eye-ac {
                                 background-color: $eye;
                                 color: $color_btn_hover;
                             }
+
                             &.mdi-folder {
                                 border: 1px solid $folder;
                                 color: $folder;
+
                                 &:focus {
                                     box-shadow: 0 0 10px $folder;
                                 }
                             }
+
                             &.mdi-folder-ac {
                                 background-color: $folder;
                                 color: $color_btn_hover;
                             }
+
                             &.mdi-eraser {
                                 border: 1px solid $eraser;
                                 color: $eraser;
+
                                 &:focus {
                                     box-shadow: 0 0 10px $eraser;
                                 }
+
                                 &:active {
                                     background-color: $eraser;
                                     color: $color_btn_hover;
@@ -154,14 +170,37 @@ body {
                         color: $dark;
                         border-radius: 5px;
                         width: 100%;
+
                         &:hover {
                             background-color: #ffa600;
                         }
+
                         &:focus {
                             box-shadow: 0 0 10px $gold;
                             background-color: $dark;
                             border-radius: 5px;
                             color: $color_btn_hover;
+                        }
+                    }
+                }
+
+                #read {
+                    width: 100%;
+                    padding: 5px 15px 15px;
+                    border: 1px solid $gold;
+                    margin: 15px 0;
+                    border-radius: 5px;
+                    direction: rtl;
+
+                    .boxText {
+                        .titleBox {
+                            color: #4769ff;
+                            font-size: 1.2rem;
+                        }
+
+                        .commentBox {
+                            font-size: 1rem;
+                            text-align: justify;
                         }
                     }
                 }
@@ -173,6 +212,7 @@ body {
                 border-top: 1px solid $gold;
                 display: flex;
                 justify-content: center;
+
                 .contMenu {
                     // background-color: #4754ff;
                     width: 95%;
@@ -207,6 +247,7 @@ body {
                             &.home {
                                 font-size: 4rem;
                             }
+
                             &:focus {
                                 outline: none;
                                 color: $dark;
