@@ -8,7 +8,7 @@ $folder: #ffb444;
 $color_btn_hover: #f0f0f0;
 
 body {
-    font-family: Mikhak, Vazir, Tahoma, sans-serif;
+    font-family: Tanha, Mikhak, Vazir, Tahoma, sans-serif;
     background-color: #212121;
 
     #app {
@@ -55,7 +55,7 @@ body {
                         border-bottom: 5px solid $gold;
                         padding: 5px 15px;
                         direction: rtl;
-                        font-family: Mikhak;
+                        font-family: Tanha, Mikhak;
                         font-size: 1.5rem;
                         color: #cecece;
                         margin-bottom: 10px;
@@ -73,7 +73,7 @@ body {
                         border-bottom: 5px solid $gold;
                         padding: 5px 15px;
                         direction: rtl;
-                        font-family: Mikhak;
+                        font-family: Tanha, Mikhak;
                         font-size: 1.5rem;
                         color: #cecece;
                         resize: none;
@@ -168,7 +168,7 @@ body {
                         border: none;
                         padding: 5px 15px;
                         direction: rtl;
-                        font-family: Mikhak;
+                        font-family: Tanha, Mikhak;
                         font-size: 1.5rem;
                         color: $dark;
                         border-radius: 5px;
@@ -230,6 +230,10 @@ body {
                             padding-top: 5px;
                             text-align: justify;
                         }
+                    }
+
+                    .EN {
+                        direction: ltr;
                     }
                 }
                 padding-bottom: 100px;
